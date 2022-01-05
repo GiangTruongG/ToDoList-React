@@ -1,13 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&family=Rubik:wght@300;400;600&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Rubik', 'Poppins';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+h3 {
+  margin: 35px auto;
+  font-size: 30px;
+}
+
+/* styling left side */
+.left-side {
+  width: 600px;
+  height: 650px;
+  border: 5px solid rgb(78, 40, 218);
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-side .form-left-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.left-side .form-left-container input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.left-side .form-left-container textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.left-side .form-left-container label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.left-side .form-left-container p {
+  text-align: center;
+}
+
+.left-side .form-left-container button {
+  width: 100px;
+  padding: 10px;
+  background-color: rgb(78, 40, 218);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+
+/* styling right side */
+.right-side {
+  width: 600px;
+  height: 650px;
+  border: 5px solid rgb(78, 40, 218);
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-side .form-right-container {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.right-side .form-right-container input {
+  width: 75%;
+}
+
+.right-side .form-right-container button {
+  width: 20%;
+  background-color: rgb(78, 40, 218);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.right-side .task-list {
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.right-side .task-list .task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.right-side .task-list .task:hover {
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.right-side .task-list .task .edit-btn {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: hsl(125, 71%, 66%);
+  font-size: 20px;
+}
+
+.right-side .task-list .task .edit-btn:hover {
+  color: hsl(125, 67%, 44%);
+}
+
+.right-side .task-list .task .delete-btn {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: hsl(360, 71%, 66%);
+  font-size: 20px;
+}
+
+.right-side .task-list .task .delete-btn:hover {
+  color: hsl(360, 67%, 44%);
+}
+
